@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './questions.dart';
+import './answers.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,25 +40,10 @@ class _MyAppState extends State<MyApp> {
             Question(
               questions[_questionIndex], //use [index] instead of elementsAt
             ),
-            RaisedButton(
-              child: Text("Answer 1"),
-              onPressed: _answerQuestions,
-            ),
-            RaisedButton(
-                child: Text("Answer 2"),
-                onPressed:
-                    _answerQuestions // () => print("Answer 2 chosen") //anonymous functions
-                ),
-            RaisedButton(
-                child: Text("Answer 3"),
-                onPressed:
-                    _answerQuestions //() => print("Answer 3 chosen"), //anonymous functions,
-                ),
-            RaisedButton(
-                child: Text("Answer 4"),
-                onPressed:
-                    _answerQuestions //() => print("Answer 4 chosen"), //anonymous functions,
-                ),
+            Answer(_answerQuestions),
+            Answer(_answerQuestions),
+            Answer(_answerQuestions),
+            Answer(_answerQuestions),
           ],
         ),
       ),
