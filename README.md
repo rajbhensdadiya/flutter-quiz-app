@@ -2,7 +2,7 @@
 
 Learning Flutter 
 
-> :warning: **This Project is Under Construction**:
+> :warning: **This Project is Under Construction**
 
 
 ## Getting Started
